@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .login-container,
+  .register-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #f58536;
+  }
+  .registration-wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(245, 133, 54, 0.7); /* Narancssárga árnyék */
+  }
+  
+  h1 {
+    text-align: center;
+    color: black; /* Narancssárga szöveg */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: black; /* Szürke szöveg */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #f58536;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #f58536; /* Narancssárga gomb */
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d36f20; /* Sötétebb narancssárga gomb hover esetén */
+  }
+  
+  p {
+    text-align: center;
+    color: black; /* Szürke szöveg */
+  }
+    /* A felugró ablak stílusa */
+    #myModal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* A felugró tartalom stílusa */
+    #myModal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%;
+      text-align: center;
+    }
+
+    /* A bezáró gomb stílusa */
+    #closeBtn {
+      color: #000;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #closeBtn:hover,
+    #closeBtn:focus {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* A szöveg stílusa a felugró ablakban */
+    #myModal-content p {
+      color: #000;
+      text-align: center;
+    }
+
+    /* A jelszó-egyezés üzenetének stílusa */
+    #passwordMismatch {
+      display: none;
+      color: red;
+      font-weight: bold;
+    }

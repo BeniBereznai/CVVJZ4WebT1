@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FishingTackle.com</title>
+  <link id="theme-style" rel="stylesheet" href="CSS\item.css"> 
+  <link rel="stylesheet" href="styles.css">
+  <script src="JS\itemscript.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="rod.html">RODS</a></li>
+          <li><a href="reel.html">REELS</a></li>
+          <li><a href="camp.html">CAMP</a></li>
+          <li><a href="other.html">OTHER</a></li>
+          <li><a href="login.html">SIGN IN</a></li>
+          <li class="dropdown settings-icon" id="themeDropdown">
+            <a href="javascript:void(0);" class="dropbtn">&#9881;</a>
+            <div class="dropdown-content" id="themeOptions">
+              <div class="theme-box">
+                <a href="#" id="lightTheme">Világos téma</a>
+                <a href="#" id="darkTheme">Sötét téma</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="settings-icon" onclick="showCartItems()">🛒 <span id="purchaseCount">0</span></a></li>
+        </ul>
+      </nav>
+      <a href="fishingtackle.html">
+        <img src="Img\Home\Logo.png" alt="Fishing Tackle" style="display: inline-block; width: 50%">
+      </a>
+    </div>
+    <div class="description">
+        <h1>Rods</h1>
+        <table>
+          <tr>
+            <td style="width: 400px;">
+              <img style="margin-top: 20px;"class="intro-image" src="Img\Rods\TXU.jfif" alt="Image 1">
+              <p style="text-align: center; font-size: 20px;">Shimano TX-Ultra 13ft 3.5lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px; width: 200px;" >
+              <li>3 years warranty</li>
+              <li>Distance rod</li>
+              <li>Premium quality</li>
+              <li>Made in Japan</li>
+              <li>500€</li>
+            <td>  
+            <td style="padding-left: 400px; width: 50px;">
+              <button type="submit" onclick="showMessage()">Buy</button>
+            <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\Infinity.jfif" alt="Image 1" >
+              <p style="text-align: center; font-size: 20px;">Daiwa Indinity 13ft 3.5lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>2 years warranty</li>
+              <li>Distance rod</li>
+              <li>Premium quality</li>
+              <li>Made in Japan</li>
+              <li>430€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\DNA.jpg" alt="Image 1" >
+              <p style="text-align: center; font-size: 20px;">Sportex DNA 13ft 3.75lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>10 year warranty</li>
+              <li>Distance power rod</li>
+              <li>High quality</li>
+              <li>Made in Germany</li>
+              <li>220€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\CS4.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Sportex Competition CS-4 12ft 3.25lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>10 year warranty</li>
+              <li>Multi functional rod</li>
+              <li>Mid quality</li>
+              <li>Made in Germany</li>
+              <li>130€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\Beyond.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Sportex Beyond-carp 13ft 3.75lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>10 year warranty</li>
+              <li>Distance power rod</li>
+              <li>Premium top quality</li>
+              <li>Made in Germany</li>
+              <li>620€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\FBC.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Sportex FBC Carp CS3 12ft 2.75lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>10 year warranty</li>
+              <li>Advature rod</li>
+              <li>High quality</li>
+              <li>Made in Germany</li>
+              <li>320€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Rods\Triumph.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Sportex Triumph 10ft 3lbs</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>10 year warranty</li>
+              <li>Stalker power rod</li>
+              <li>High quality</li>
+              <li>Made in Germany</li>
+              <li>240€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+        </table>
+      </div>
+      <div class="ending">
+        <h1>FISHING TACKLE</h1>
+        <h2>WebSite created by: Benjamin Bereznai</h2>
+      </div>
+  </div>
+  <div id="myModal">
+    <div id="myModal-content">
+      <span id="closeBtn">&times;</span>
+      <p>Item succesfully placed in the shopping cart!</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var themeDropdown = document.getElementById('themeDropdown');
+      var themeOptions = document.getElementById('themeOptions');
+  
+      themeDropdown.addEventListener('click', function(event) {
+        if (themeOptions.style.display === 'none' || themeOptions.style.display === '') {
+          themeOptions.style.display = 'block';
+        } else {
+          themeOptions.style.display = 'none';
+        }
+      });    
+      // Funkció a téma választására
+      document.getElementById('lightTheme').addEventListener('click', function() {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+        document.getElementById('theme-style').href = 'CSS\item_bright.css';
+      });
+  
+      document.getElementById('darkTheme').addEventListener('click', function() {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        document.getElementById('theme-style').href = 'CSS\item.css';
+      });
+    });
+    </script>
+</body>
+</html>

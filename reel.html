@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FishingTackle.com</title>
+  <link id="theme-style" rel="stylesheet" href="CSS\item.css"> 
+  <link rel="stylesheet" href="styles.css">
+  <script src="JS\itemscript.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="rod.html">RODS</a></li>
+          <li><a href="reel.html">REELS</a></li>
+          <li><a href="camp.html">CAMP</a></li>
+          <li><a href="other.html">OTHER</a></li>
+          <li><a href="login.html">SIGN IN</a></li>
+          <li class="dropdown settings-icon" id="themeDropdown">
+            <a href="javascript:void(0);" class="dropbtn">&#9881;</a>
+            <div class="dropdown-content" id="themeOptions">
+              <div class="theme-box">
+                <a href="#" id="lightTheme">Világos téma</a>
+                <a href="#" id="darkTheme">Sötét téma</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="settings-icon" onclick="showCartItems()">🛒 <span id="purchaseCount">0</span></a></li>
+        </ul>
+      </nav>
+      <a href="fishingtackle.html">
+        <img src="Img\Home\Logo.png" alt="Fishing Tackle" style="display: inline-block; width: 50%">
+      </a>
+    </div>
+    <div class="description">
+        <h1>Reels</h1>
+        <table>
+          <tr>
+            <td style="width: 400px;">
+              <img style="margin-top: 20px;"class="intro-image" src="Img\Reels\Tech.webp" alt="Image 1">
+              <p style="text-align: center; font-size: 20px;">Shimano Aero Technium Mgs 14000</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px; width: 200px;" >
+              <li>3 years warranty</li>
+              <li>Magnesium body</li>
+              <li>Premium top quality</li>
+              <li>Made in Japan</li>
+              <li>1100€</li>
+            <td>  
+            <td style="padding-left: 400px; width: 50px;">
+              <button type="submit" onclick="showMessage()">Buy</button>
+            <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Tournament.jpg" alt="Image 1" >
+              <p style="text-align: center; font-size: 20px;">Daiwa Tournament</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+              <li>3 years warranty</li>
+              <li>Big line capacity</li>
+              <li>Premium top quality</li>
+              <li>Made in Japan</li>
+              <li>1000€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Aero.jpg" alt="Image 1" >
+              <p style="text-align: center; font-size: 20px;">Shimano Power Aero 14000 XTB</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Magnesium body</li>
+                <li>Slow Spool Lifting</li>
+                <li>Premium quality</li>
+                <li>Made in Japan</li>
+                <li>500€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Spod.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Shimano Spod Ultegra XTB</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Slow Spool Lifting</li>
+                <li>Spod Reel</li>
+                <li>Mid quality</li>
+                <li>Made in Malaysia</li>
+                <li>200€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Surf.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Okuma Distance Surf 60</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>1 years warranty</li>
+                <li>Low quality</li>
+                <li>Made in China</li>
+                <li>70€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\XTE.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Shimano Ultegra 14000 XTE</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Slow Spool Lifting</li>
+                <li>Mid quality</li>
+                <li>Made in Malaysia</li>
+                <li>200€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Master.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Shimano Speedmaster 14000 XTC</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Slow Spool Lifting</li>
+                <li>Mid quality</li>
+                <li>Made in Malaysia</li>
+                <li>170€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\Basia.jpg" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Daiwa Basia</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Slow spool lifting</li>
+                <li>Premium quality</li>
+                <li>Made in Japan</li>
+                <li>600€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+          <tr>
+            <td>
+              <img style="margin-top: 40px;" class="intro-image" src="Img\Reels\ARXSpoD.webp" alt="Image 2">
+              <p style="text-align: center; font-size: 20px;">Shimano Aerlex Spod</p>
+            </td>
+            <td td class="list-container" style="padding-left: 200px;">
+                <li>2 years warranty</li>
+                <li>Spod Reel</li>
+                <li>Mid quality</li>
+                <li>Made in Malaysia</li>
+                <li>100€</li>
+            <td> 
+              <td style="padding-left: 400px;">
+                <button type="submit" onclick="showMessage()">Buy</button>
+              <td>  
+          </tr>
+        </table>
+      </div>
+      <div class="ending">
+        <h1>FISHING TACKLE</h1>
+        <h2>WebSite created by: Benjamin Bereznai</h2>
+      </div>
+  </div>
+  <div id="myModal">
+    <div id="myModal-content">
+      <span id="closeBtn">&times;</span>
+      <p>Item succesfully placed in the shopping cart!</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var themeDropdown = document.getElementById('themeDropdown');
+      var themeOptions = document.getElementById('themeOptions');
+  
+      themeDropdown.addEventListener('click', function(event) {
+        if (themeOptions.style.display === 'none' || themeOptions.style.display === '') {
+          themeOptions.style.display = 'block';
+        } else {
+          themeOptions.style.display = 'none';
+        }
+      });    
+      // Funkció a téma választására
+      document.getElementById('lightTheme').addEventListener('click', function() {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+        document.getElementById('theme-style').href = 'CSS\item_bright.css';
+      });
+  
+      document.getElementById('darkTheme').addEventListener('click', function() {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        document.getElementById('theme-style').href = 'CSS\item.css';
+      });
+    });
+    </script>
+</body>
+</html>

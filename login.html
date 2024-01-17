@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fishingtackle.com</title>
+  <link rel="stylesheet" href="CSS\login.css">
+  
+</head>
+<body>
+  <div class="login-container">
+    <h1>Sign In</h1>
+    <form action="/login" method="post">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" id="signInBtn">Sign In</button>
+    </form>
+    <a href="Reg.html">
+      <p>Don't have an account?</p>
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var savedEmail = localStorage.getItem('savedEmail');
+    var savedPassword = localStorage.getItem('savedPassword');
+
+    if (savedEmail && savedPassword) {
+      document.getElementById('username').value = savedEmail;
+      document.getElementById('password').value = savedPassword;
+    }
+  });
+
+  document.getElementById('signInBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Ellenőrizzük, hogy mindkét mező kitöltve van-e
+    var usernameValue = document.getElementById('username').value;
+    var passwordValue = document.getElementById('password').value;
+
+    if (!usernameValue || !passwordValue) {
+      alert('Mindkét mezőt ki kell tölteni!');
+      return;
+    }
+    document.getElementById('signInBtn').addEventListener('click', function(event) {
+      // Ez megakadályozza az alapértelmezett működést (pl. a form elküldését)
+      event.preventDefault();
+
+      // Ide írd be az átirányítás céloldalának URL-jét
+      var redirectURL = 'masik_oldal.html';
+
+      // Ide kerülhet a bejelentkezés logikája, például adatellenőrzés stb.
+
+      // Végül az átirányítás
+      window.location.href = 'fishingtackle.html';
+    });
+    var redirectURL = 'fishingtackle.html';
+    window.location.href = redirectURL;
+    localStorage.setItem('loginSuccess', 'true'); // A sikeres bejelentkezés tárolása
+  });
+
+  </script>  
+</body>
+</html>

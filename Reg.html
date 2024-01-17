@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fishingtackle.com</title>
+  <link rel="stylesheet" href="CSS\reg.css">
+  
+</head>
+<body>
+<div class="registration-wrapper">
+  <div class="registration-container">
+    <h1>Registration</h1>
+    <form id="registration-form" action="/registration" method="post">
+      <div class="input-group">
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="input-group">
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="input-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+      </div>
+      <div class="input-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+      <div class="input-group">
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email adress:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <div id="passwordMismatch">The passwords do not match!</div>
+      <button type="submit" id="submit-btn">Create account</button>
+    </form>
+  </div>
+</div>
+
+<!-- Felugró ablak tartalma -->
+<div id="myModal">
+  <div id="myModal-content">
+    <span id="closeBtn">&times;</span>
+    <p>Minden mező kitöltése szükséges!</p>
+  </div>
+</div>
+<script>
+  document.getElementById('registration-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var form = event.target;
+  var password = form.querySelector('#password').value;
+  var confirmPassword = form.querySelector('#confirm-password').value;
+  var email = form.querySelector('#email').value;
+
+  var passwordMismatch = document.getElementById('passwordMismatch');
+  passwordMismatch.style.display = 'none'; // Alapértelmezés: rejtve
+
+  if (password !== confirmPassword) {
+    passwordMismatch.style.display = 'block';
+  } else {
+    var inputs = form.querySelectorAll('input');
+
+    var allFilled = true;
+    inputs.forEach(function(input) {
+      if (input.value.trim() === '') {
+        allFilled = false;
+      }
+    });
+
+    if (allFilled) {
+      // Az adatok tárolása localStorage-ben
+      localStorage.setItem('savedEmail', email);
+      localStorage.setItem('savedPassword', password);
+
+      // Átirányítás egy másik oldalra
+      window.location.href = 'login.html';
+    } else {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "block";
+    }
+  }
+});
+</script>
+</body>
+</html>

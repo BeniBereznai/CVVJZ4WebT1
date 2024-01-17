@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FishingTackle.com</title>
+  <link id="theme-style" rel="stylesheet" href="CSS\Base.css"> 
+  <link rel="stylesheet" href="styles.css">
+  <script src="JS\homescript.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="rod.html">RODS</a></li>
+          <li><a href="reel.html">REELS</a></li>
+          <li><a href="camp.html">CAMP</a></li>
+          <li><a href="other.html">OTHER</a></li>
+          <li><a href="login.html">SIGN IN</a></li>
+          <li class="dropdown settings-icon" id="themeDropdown">
+            <a href="javascript:void(0);" class="dropbtn">&#9881;</a>
+            <div class="dropdown-content" id="themeOptions">
+              <div class="theme-box">
+                <a href="#" id="lightTheme">Világos téma</a>
+                <a href="#" id="darkTheme">Sötét téma</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="settings-icon">🛒</a></li>
+        </ul>
+      </nav>
+      <a href="fishingtackle.html">
+        <img src="Img\Home\Logo.png" alt="Fishing Tackle" style="display: inline-block; width: 50%">
+      </a>
+    </div>
+    <div class="description">
+        <h1>Introduction</h1>
+        <table>
+          <tr>
+            <td>
+                <img class="intro-image" src="Img\Home\spooner.jpg" alt="Image 1" >
+              </td>
+            <td>
+              <p>Welcome to the world of FISHING TACKLE, where our passion and dedication to fishing guide us. Our company's aim is to provide pony anglers with all the necessary tools and equipment for success and reaching new levels of experience. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Our motto, 'Beyond the Catch,' encourages us not only to focus on the catch itself but to enjoy and enrich every moment of fishing.
+                You'll find not only products but expertise, advice, and inspiration with us, making every fishing adventure special. </p>
+            </td>
+            <td>
+              <img class="intro-image" src="Img\Home\Dany.jpg" alt="Image 1" >
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img class="intro-image" src="Img\Home\darrel.jpg" alt="Image 1" >
+              </td>
+            <td>
+              <p>Whether it's professional gear, the latest technologies, or traditional methods, every angler can find what they desire with us.
+                In addition to our exceptional quality products and services, we're committed to community building and spreading the love of fishing. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Join us and go beyond the catch to discover the magic and beauty of fishing!
+                Are you ready to explore a new dimension of fishing? We welcome you warmly to FISHING TACKLE, where we bring the philosophy of 'Beyond the Catch' to life every day!</p>
+            </td>
+            <td>
+              <img class="intro-image" src="Img\Home\Tom.jpg" alt="Image 2">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ending">
+        <h1>FISHING TACKLE</h1>
+        <h2>WebSite created by: Benjamin Bereznai</h2>
+      </div>
+  </div>
+  <div id="myModal">
+    <div id="myModal-content">
+      <h1>Succesfull log in!</h1>
+      <p>Welcome! You succesfully logged in!</p>
+    </div>
+  </div>
+  <script>
+    // Ellenőrizzük a localStorage-t a sikeres bejelentkezésre
+    var loginSuccess = localStorage.getItem('loginSuccess');
+    if (loginSuccess === 'true') {
+      // Ha sikeres bejelentkezés történt, megjelenítjük a felugró ablakot
+      var modal = document.getElementById('myModal');
+      var modalContent = document.getElementById('myModal-content');
+      modal.style.display = 'block';
+
+      // Törljük a localStorage-ból a sikeres bejelentkezés állapotát
+      localStorage.removeItem('loginSuccess');
+
+      // Az ablak bezárása idővel
+      setTimeout(function() {
+        modal.style.display = 'none';
+      }, 3000); // 3 másodperc múlva bezáródik az ablak
+    }
+  </script>
+</body>
+</html>
